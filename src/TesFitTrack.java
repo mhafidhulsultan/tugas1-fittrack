@@ -6,6 +6,10 @@ public class TesFitTrack {
      * @param args argumen command line (tidak digunakan)
      */
     public static void main(String[] args) {
+
+	System.out.println("=========================================");
+     	System.out.println("   SISTEM PENDATAAN MEMBER FITTRACK      ");
+     	System.out.println("=========================================\n");
         
         Member[] daftarMember = new Member[4];
 
