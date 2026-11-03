@@ -36,6 +36,7 @@ public class Member {
     }
 
     public void setNoTelepon(String noTelepon) {
+	// Pastikan input tidak null, dimulai dengan 0, dan panjangnya >= 10
         if (noTelepon != null && noTelepon.startsWith(AWALAN_TELEPON) && noTelepon.length() >= MIN_PANJANG_TELEPON) {
             this.noTelepon = noTelepon;
         } else {
@@ -56,7 +57,7 @@ public class Member {
     }
 
     public void setJenisPaket(String jenisPaket) {
-        
+        // Pastikan input tidak null, cocokkan dgn 3 paket pilihan gym
         if (jenisPaket != null && (jenisPaket.equals("Basic") || jenisPaket.equals("Premium") || jenisPaket.equals("VIP"))) {
             this.jenisPaket = jenisPaket;
         } else {
