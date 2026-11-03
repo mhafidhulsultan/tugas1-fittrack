@@ -9,6 +9,10 @@
 \* \*\*Kelas\*\*        : Praktikum Pemrograman Berorientasi Objek
 
 
+## Status Project
+**[ SELESAI / COMPLETED ]** - Versi 1.0.0
+Seluruh persyaratan tugas (validasi if-else, konsep OOP, array, Javadoc) telah terpenuhi dan berjalan dengan baik.
+
 
 \## Deskripsi Singkat
 
