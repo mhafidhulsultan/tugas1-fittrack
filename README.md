@@ -31,3 +31,26 @@ tugas1-fittrack/
 └── src/                  # Folder penyimpanan source code Java
     ├── Member.java       # Class data model dan validasi member gym
     └── TesFitTrack.java  # Class utama untuk pengujian program (Main)
+
+## Prasyarat
+- **Java Development Kit (JDK)**: Versi 11 atau lebih baru.
+- **IDE**: Disarankan menggunakan IntelliJ IDEA (sesuai pedoman praktikum) atau teks editor lain seperti VS Code.
+
+## Cara Menjalankan Program
+```javac src/Member.java src/TesFitTrack.java```
+
+## Contoh Output
+Berikut adalah hasil eksekusi program yang menampilkan skenario pembuatan objek berhasil maupun saat validasi menolak data yang salah:
+[Screenshot Hasil Eksekusi](output.png)
+
+## Nilai Default
+Ketika objek dibuat menggunakan data yang tidak lolos validasi, program tidak akan *crash*, melainkan menggunakan nilai default yang aman:
+- `nama`: "Member Baru"
+- `noTelepon`: "0000000000"
+- `tanggalDaftar`: "01-01-2026"
+- `jenisPaket`: "Basic"
+Alasan pemilihan nilai ini adalah untuk menjaga integritas data agar tidak ada nilai `null` di dalam sistem, sekaligus menjadi penanda visual bagi staf resepsionis bahwa data tersebut harus segera dikonfirmasi/diedit ulang.
+
+## Batasan dan Pengembangan Lanjutan
+- **Batasan**: Sistem saat ini hanya menyimpan data sementara di dalam memori lokal (Array). Data akan hilang sepenuhnya ketika aplikasi ditutup[cite: 12].
+- **Pengembangan Lanjutan**: Ke depannya, program dapat dikembangkan dengan menghubungkannya ke Database (seperti MySQL) untuk penyimpanan permanen, serta pembuatan Antarmuka Pengguna Grafis (GUI) agar staf tidak lagi menggunakan Command Line/Terminal.
