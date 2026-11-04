@@ -26,7 +26,7 @@ FitTrack adalah sistem pendataan member gym berbasis Java yang dirancang untuk m
 
 | Konsep OOP | Lokasi Penerapan | Alasan Pemilihan |
 
-| --- | --- | --- |
+|            |                  |                  |
 
 | \*\*Encapsulation\*\* | Atribut `private` dan Getter/Setter di class `Member` | Melindungi atribut agar tidak diakses secara langsung dari luar dan memusatkan validasi data di method setter. |
 
